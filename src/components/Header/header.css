@@ -1,0 +1,66 @@
+.header {
+    display: grid;
+    background-color: rgb(242, 247, 245);
+    height: 100%;
+    align-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    position: relative;
+}
+
+.header_motto {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 60vh;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.header_motto h1 {
+    color: rgb(25, 126, 145);
+    font-weight: 200;
+    font-size: 4rem;
+}
+
+.header_img img {
+    width: 60%;
+    border-radius: 20px;
+    border: 3px solid rgb(25, 126, 145);
+}
+
+.check {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0px;
+    left: 40%;
+    color: rgb(25, 126, 145);
+}
+
+@media screen and (max-width: 700px) {
+    .header_img img {
+        display: none;
+    }
+
+    .header {
+        display: flex;
+    }
+
+    .check {
+        left: 30%;
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (max-width: 415px) {
+    .check {
+        left: 25%;
+    }
+
+    .header_motto h1{
+        font-size: 3rem;
+    }
+}

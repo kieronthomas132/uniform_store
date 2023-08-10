@@ -1,0 +1,114 @@
+.products {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    width: auto;
+    background-color: rgb(242, 247, 245);
+    position: relative;
+}
+
+.product_buttons,
+.product_buttons_filter {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.product_buttons button,
+.product_buttons_filter button {
+    padding: 0.7rem;
+    border-radius: 10px;
+    border: none;
+    background: rgb(25, 126, 145);
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.product_filter h2 {
+    display: none;
+}
+
+.product_filter:hover {
+    cursor: pointer;
+}
+
+.product_items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 2rem;
+    gap: 2rem;
+}
+
+.product_item {
+    border: 2px solid rgb(25, 126, 145);
+    border-radius: 20px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    width: 250px;
+    gap: 0.5rem;
+}
+.product_item img {
+    max-width: 200px;
+    height: 200px;
+    object-fit: contain;
+    background-color: rgb(242, 247, 245);
+}
+
+.product_item p {
+    color: black;
+}
+
+.product_item button {
+    padding: 0.5rem;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(25, 126, 145);
+    color: white;
+    cursor: pointer;
+}
+
+.progress_bar {
+    font-size: 3rem;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+}
+
+@media screen and (max-width: 530px) {
+    .product_buttons {
+        display: none;
+    }
+
+    .product_filter h2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: rgb(25, 126, 145);
+        border: 1px solid  rgb(25, 126, 145);
+        width: 30%;
+        margin: 1rem auto;
+        border-radius: 20px;
+    }
+
+    .product_buttons_filter button {
+        font-size: 0.7rem;
+    }
+}
+
+@media screen and (max-width:930px) {
+    .product_items {
+        display: flex;
+        flex-direction: column;
+    }
+}
