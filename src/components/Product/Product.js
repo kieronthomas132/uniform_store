@@ -20,10 +20,10 @@ const Product = () => {
                     url: 'https://amazon23.p.rapidapi.com/product-details',
                     params: {
                         asin: 'B08H8VZ6PV',
-                        country: 'US'
+                        country: 'UK'
                     },
                     headers: {
-                        'X-RapidAPI-Key': 'e75ecac25cmsh2f053e06df61427p16e0d3jsna3cac8ae91d0',
+                        'X-RapidAPI-Key': process.env.REACT_APP_STORE_API,
                         'X-RapidAPI-Host': 'amazon23.p.rapidapi.com'
                     }
                 };
